@@ -1327,7 +1327,9 @@
   content: 29;
   content: 14.5;
 }
-
+.mb-4 {
+  margin-bottom: 15px;
+}
 a.title {
   position: relative;
   display: block;
