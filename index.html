@@ -14,12 +14,12 @@
 <nav class="nav" id="nav">
     <div class="nav-wrapper">
         <div class="nav-routes">
-            <a href="" class="nav-link">Main</a>
-            <a href="" class="nav-link">News</a>
-            <a href="" class="nav-link">Stocks</a>
-            <a href="" class="nav-link">Events</a>
-            <a href="" class="nav-link">Articles</a>
-            <a href="" class="nav-link">Work</a>
+            <a href="/" class="nav-link">Home</a>
+            <a href="articles" class="nav-link">News</a>
+            <a href="articles" class="nav-link">Stocks</a>
+            <a href="articles" class="nav-link">Events</a>
+            <a href="articles" class="nav-link">Articles</a>
+            <a href="articles" class="nav-link">Work</a>
         </div>
     </div>
 </nav>
@@ -30,11 +30,21 @@
                 <div class="header-logo">
                     <img src="public/img/logo/logo.png" alt="logo">
                 </div>
-                <div class="header-search"></div>
             </div>
             <div class="header-col">
+                <div class="header-routes">
+                    <a href="/" class="header-link active">Home</a>
+                    <a href="articles" class="header-link">News</a>
+                    <a href="articles" class="header-link">Stocks</a>
+                    <a href="articles" class="header-link">Events</a>
+                    <a href="articles" class="header-link">Articles</a>
+                    <a href="articles" class="header-link">Work</a>
+                </div>
             </div>
             <div class="header-col">
+                <div class="header-search">
+                    <input type="text">
+                </div>
                 <div class="header-btns">
                     <a href="" class="btn btn-sm btn-1-blue">Login</a>
                     <a href="" class="btn btn-sm btn-2-blue">Register</a>
@@ -54,14 +64,6 @@
         </div>
         <div class="header-row">
             <div class="header-col">
-                <div class="header-routes">
-                    <a href="" class="header-link">Main</a>
-                    <a href="" class="header-link">News</a>
-                    <a href="" class="header-link">Stocks</a>
-                    <a href="" class="header-link">Events</a>
-                    <a href="" class="header-link">Articles</a>
-                    <a href="" class="header-link">Work</a>
-                </div>
             </div>
         </div>
     </div>
@@ -72,7 +74,38 @@
             <div class="row">
                 <div class="col-12">
                     <div class="slider">
-                        <div class="slider-content"></div>
+                        <div class="slider-wrapper">
+                            <div class="slider-content">
+                                <a href="article" class="slider-item active">
+                                    <div class="news">
+                                        <div class="news-wrapper">
+                                            <div class="news-box news-box--slider">
+                                                <figure class="news-image">
+                                                    <img src="public/img/news/main/img-1.jpg" alt="photo">
+                                                    <figcaption class="news-text">
+                                                        <span class="title tc-white ts-24 ts-md-30 tw-400">Olympiad. <br />Athletics Category Winners</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="article" class="slider-item">
+                                    <div class="news">
+                                        <div class="news-wrapper">
+                                            <div class="news-box news-box--slider">
+                                                <figure class="news-image">
+                                                    <img src="public/img/news/main/img-2.jpg" alt="photo">
+                                                    <figcaption class="news-text">
+                                                        <span class="title tc-white ts-24 ts-md-30 tw-400">Concert. <br/>Imagine Dragons</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                         <div class="slider-control">
                             <div class="slider-arrows">
                                 <i class="slider-btn slider-btn--prev"></i>
@@ -93,7 +126,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="title ts-36 mb-4">Main news</h1>
+                    <h1 class="title ts-26 ts-md-36">Main news</h1>
                 </div>
             </div>
             <div class="row">
@@ -102,46 +135,52 @@
                         <div class="news-wrapper">
                             <div class="row row-cols-5">
                                 <div class="col col-sm-12 col-md-8 mb-4">
-                                    <div class="news-box news-box--main">
-                                        <div class="news-image">
-                                            <img src="public/img/news/main/img-3.jpg" alt="news-img" />
-                                        </div>
-                                        <div class="news-type" data-type="1">
-                                            <p class="text">Beauty & Health</p>
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title ts-24 tw-500">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--main">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/main/img-3.jpg" alt="news-img" />
+                                            </div>
+                                            <div class="news-type" data-type="1">
+                                                <p class="text">Beauty & Health</p>
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title ts-16 ts-sm-20 ts-md-24 tw-500">The situation with the spread of the Coronavirus</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-4 mb-4">
-                                    <div class="news-box news-box--main">
-                                        <div class="news-image">
-                                            <img src="public/img/news/main/img-4.jpg" alt="news-img" />
-                                        </div>
-                                        <div class="news-type" data-type="2">
-                                            <p class="text">Sport & Fitness</p>
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title ts-24 tw-500">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--main">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/main/img-4.jpg" alt="news-img" />
+                                            </div>
+                                            <div class="news-type" data-type="2">
+                                                <p class="text">Sport & Fitness</p>
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title ts-16 ts-sm-20 ts-md-24 tw-500">New Skate Park in Sydney</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-4">
-                                    <div class="news-box news-box--main">
-                                        <div class="news-image">
-                                            <img src="public/img/news/main/img-5.jpg" alt="news-img" />
-                                        </div>
-                                        <div class="news-type" data-type="3">
-                                            <p class="text">Services</p>
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title ts-24 tw-500">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--main">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/main/img-5.jpg" alt="news-img" />
+                                            </div>
+                                            <div class="news-type" data-type="3">
+                                                <p class="text">Services</p>
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title ts-16 ts-sm-20 ts-md-24 tw-500">Attractions and ideas for a tour of India</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-4">
-                                    <div class="news-box news-box--main">
+                                    <a href="article" class="news-box news-box--main">
                                         <div class="news-image">
                                             <img src="public/img/news/main/img-6.jpg" alt="news-img" />
                                         </div>
@@ -149,20 +188,22 @@
                                             <p class="text">Safety & Secure</p>
                                         </div>
                                         <div class="news-text">
-                                            <h4 class="title ts-24 tw-500">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+                                            <h4 class="title ts-16 ts-sm-20 ts-md-24 tw-500">Fighting fires finished in Turkey</h4>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-4">
-                                    <div class="news-box news-box--main">
-                                        <div class="news-image">
-                                            <img src="public/img/news/main/img-7.jpg" alt="news-img" />
-                                        </div>
-                                        <span class="news-type" data-type="5">Finance</span>
-                                        <div class="news-text">
-                                            <h4 class="title ts-24 tw-500">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-                                        </div>
-                                    </div>
+                                    <article>
+                                        <a href="article" class="news-box news-box--main">
+                                            <div class="news-image">
+                                                <img src="public/img/news/main/img-7.jpg" alt="news-img" />
+                                            </div>
+                                            <span class="news-type" data-type="5">Finance</span>
+                                            <div class="news-text">
+                                                <h4 class="title ts-16 ts-sm-20 ts-md-24 tw-500">Lack of staff and inspection of repaired roads</h4>
+                                            </div>
+                                        </a>
+                                    </article>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title ts-36 mb-4">Stocks, Sales & Special offers</h2>
+                    <a href="articles" class="title ts-26 ts-md-36 mb-4">Stocks, Sales & Special offers</a>
                 </div>
             </div>
             <div class="row">
@@ -184,36 +225,44 @@
                         <div class="news-wrapper">
                             <div class="row row-cols-4">
                                 <div class="col col-sm-6 col-md-3">
-                                    <div class="news-box news-box--offer" data-style="1" data-offer="gift">
-                                        <p class="text tc-white ts-14 tw-400">
-                                            <i class="ico ico-calendar"></i>12.05-25.09
-                                        </p>
-                                        <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit amet, consectetur</h4>
-                                    </div>
+                                    <a href="article" class="news-box news-box--offer" data-style="1" data-offer="gift">
+                                        <article>
+                                            <p class="text tc-white ts-14 tw-400">
+                                                <i class="ico ico-calendar"></i>12.05-25.09
+                                            </p>
+                                            <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">Gift towels for purchases from $100</h4>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-3">
-                                    <div class="news-box news-box--offer" data-style="2" data-offer="sale">
-                                        <p class="text tc-white ts-14 tw-400">
-                                            <i class="ico ico-calendar"></i>12.05-25.09
-                                        </p>
-                                        <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit amet, consectetur</h4>
-                                    </div>
+                                    <a href="article" class="news-box news-box--offer" data-style="2" data-offer="sale">
+                                        <article>
+                                            <p class="text tc-white ts-14 tw-400">
+                                                <i class="ico ico-calendar"></i>12.05-25.09
+                                            </p>
+                                            <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">Access to the pool with a 50% discount on weekdays</h4>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-3">
-                                    <div class="news-box news-box--offer" data-style="3" data-offer="ticket">
-                                        <p class="text tc-white ts-14 tw-400">
-                                            <i class="ico ico-calendar"></i>12.05-25.09
-                                        </p>
-                                        <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit amet, consectetur</h4>
-                                    </div>
+                                    <a href="article" class="news-box news-box--offer" data-style="3" data-offer="ticket">
+                                        <article>
+                                            <p class="text tc-white ts-14 tw-400">
+                                                <i class="ico ico-calendar"></i>12.05-25.09
+                                            </p>
+                                            <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">Every fifth car wash is FREE</h4>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-6 col-md-3">
-                                    <div class="news-box news-box--offer" data-style="4" data-offer="gift">
-                                        <p class="text tc-white ts-14 tw-400">
-                                            <i class="ico ico-calendar"></i>12.05-25.09
-                                        </p>
-                                        <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit amet, consectetur</h4>
-                                    </div>
+                                    <a href="article" class="news-box news-box--offer" data-style="4" data-offer="gift">
+                                        <article>
+                                            <p class="text tc-white ts-14 tw-400">
+                                                <i class="ico ico-calendar"></i>12.05-25.09
+                                            </p>
+                                            <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">A present from the chef on Tuesdays</h4>
+                                        </article>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +275,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title ts-36 mb-4">Photo report</h2>
+                    <a href="articles" class="title ts-26 ts-md-36 mb-4">Photo report</a>
                 </div>
             </div>
             <div class="row">
@@ -235,34 +284,40 @@
                         <div class="news-wrapper">
                             <div class="row row-cols-3">
                                 <div class="col col-sm-12 col-md-4">
-                                    <div class="news-box news-box--photo">
-                                        <div class="news-image">
-                                            <img src="public/img/news/photo/img-1.jpg" alt="photo">
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--photo">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/photo/img-1.jpg" alt="photo">
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">Photo report of the opening of the new SPA</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-12 col-md-4">
-                                    <div class="news-box news-box--photo">
-                                        <div class="news-image">
-                                            <img src="public/img/news/photo/img-2.jpg" alt="photo">
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--photo">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/photo/img-2.jpg" alt="photo">
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">New interior of "Kentucky Wings" restaurant</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                                 <div class="col col-sm-12 col-md-4">
-                                    <div class="news-box news-box--photo">
-                                        <div class="news-image">
-                                            <img src="public/img/news/photo/img-3.jpg" alt="photo">
-                                        </div>
-                                        <div class="news-text">
-                                            <h4 class="title tc-white ts-20 tw-400">Lorem ipsum dolor sit</h4>
-                                        </div>
-                                    </div>
+                                    <a href="article" class="news-box news-box--photo">
+                                        <article>
+                                            <div class="news-image">
+                                                <img src="public/img/news/photo/img-3.jpg" alt="photo">
+                                            </div>
+                                            <div class="news-text">
+                                                <h4 class="title tc-white ts-16 ts-sm-18 ts-md-20 tw-400">Photo report of the largest EU clothing store</h4>
+                                            </div>
+                                        </article>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +326,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <!--<section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -284,7 +339,7 @@
                         <div class="news-wrapper">
                             <div class="row">
                                 <div class="col-12 col-md-4">
-                                    <div class="news-box news-box--events">
+                                    <div class="news-box news-box&#45;&#45;events">
                                         <div class="news-image">
                                             <img src="" alt="image">
                                         </div>
@@ -295,7 +350,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <div class="news-box news-box--events">
+                                    <div class="news-box news-box&#45;&#45;events">
                                         <div class="news-image">
                                             <img src="" alt="image">
                                         </div>
@@ -306,7 +361,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <div class="news-box news-box--events">
+                                    <div class="news-box news-box&#45;&#45;events">
                                         <div class="news-image">
                                             <img src="" alt="image">
                                         </div>
@@ -317,7 +372,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <div class="news-box news-box--events">
+                                    <div class="news-box news-box&#45;&#45;events">
                                         <div class="news-image">
                                             <img src="" alt="image">
                                         </div>
@@ -333,7 +388,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!--<section class="section">
         <div class="container">
             <div class="row">
@@ -395,6 +450,56 @@
     </section>-->
 </main>
 <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="footer-logo">
+                    <img src="public/img/logo/logo.png" alt="logo">
+                </div>
+                <p class="text tc-silver ts-10 tw-300">Student project "Informational portal". Companies, goods, works, services, photo and video reports, various activities</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="footer-routes">
+                    <p class="text tc-white ts-18 tw-400">Info</p>
+                    <a href="/" class="footer-link">Home</a>
+                    <a href="about" class="footer-link">About Us</a>
+                    <a href="about" class="footer-link">Request a post</a>
+                    <a href="about" class="footer-link">Contacts</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="footer-routes">
+                    <p class="text tc-white ts-18 tw-400">Categories</p>
+                    <a href="articles" class="footer-link">News</a>
+                    <a href="articles" class="footer-link">Stocks</a>
+                    <a href="articles" class="footer-link">Events</a>
+                    <a href="articles" class="footer-link">Articles</a>
+                    <a href="articles" class="footer-link">Work</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="footer-routes">
+                    <p class="text tc-white ts-18 tw-400">Follow Us</p>
+                    <div class="footer-social">
+                        <a href="https://www.whatsapp.com/" target="_blank" class="footer-social-link" data-social="wp"></a>
+                        <a href="https://telegram.org/" target="_blank" class="footer-social-link" data-social="tg"></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer-social-link" data-social="fb"></a>
+                        <a href="https://twitter.com/" target="_blank" class="footer-social-link" data-social="tw"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="text tc-silver ts-12 tw-300 ta-center ta-md-start">All rights reserved © 2021 Newsetta</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="text tc-silver ts-12 tw-300 ta-center ta-md-end">For persons over 18 years old</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script>
     window.onload = () => {
